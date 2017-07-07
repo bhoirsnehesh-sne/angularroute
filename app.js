@@ -6,7 +6,7 @@
         $routeProvider
 
             // route for the home page
-            .when('/', {
+            .when('/home', {
                 templateUrl : 'home.html',
                 controller  : 'mainController'
             })
