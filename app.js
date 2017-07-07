@@ -7,19 +7,19 @@
 
             // route for the home page
             .when('/', {
-                templateUrl : '/home.html',
+                templateUrl : 'home.html',
                 controller  : 'mainController'
             })
 
             // route for the about page
             .when('/about', {
-                templateUrl : '/about.html',
+                templateUrl : 'about.html',
                 controller  : 'aboutController'
             })
 
             // route for the contact page
             .when('/contact', {
-                templateUrl : '/contact.html',
+                templateUrl : 'contact.html',
                 controller  : 'contactController'
             });
     });
