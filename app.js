@@ -1,8 +1,9 @@
     // create the module and name it scotchApp
-    var scotchApp = angular.module('scotchApp', []);
+    var scotchApp = angular.module('scotchApp', ['ngRoute']);
 
     // configure our routes
-    scotchApp.config(['$routeProvider',function($routeProvider) {
+    scotchApp.config(function($routeProvider, $locationProvider) {
+        $locationProvider.hashPrefix('');
     $routeProvider
        
 
@@ -23,7 +24,7 @@
                 templateUrl : 'contact.html',
                 controller  : 'contactController'
             });
-    }]);
+    });
 
     // create the controller and inject Angular's $scope
     scotchApp.controller('mainController', function($scope) {
